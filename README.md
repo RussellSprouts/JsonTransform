@@ -5,7 +5,7 @@ Transforms JSON to JSON using JSON
 # Installation
 
 1. Clone the repository to your local machine.
-2. Navigate to the repository folder, and execute `npm install -g`
+2. Navigate to the repository folder, and execute `npm install -g ./`
    (You may need to use `sudo`.)  
 3. Now you have the commandline tool `jsontransform` on your PATH.
 4. Type `jsontransform --help` for usage information.
@@ -16,7 +16,7 @@ Transforms JSON to JSON using JSON
 
 data.json
 
-    {"key": "value", "arr": []}
+	{"key": "value", "arr": []}
 
 `jsontransform -f data.json -t "$.key"` => `"value"`  
 `jsontransform -f data.json -t "$.arr"` => `[]`
@@ -24,11 +24,11 @@ data.json
 ---
 data.json
 
-    {"key": "value", "arr": []}
+	{"key": "value", "arr": []}
 
 template.json
-    
-    {"newKey": "$.key"}
+	
+	{"newKey": "$.key"}
 
 `jsontransform -f data.json -tf template.json` => `{"newKey":"value"}`
 
@@ -37,9 +37,9 @@ template.json
 data.json
 
 	{
-	        "minorVersion": 1
-	        "status": "success",
-	        "pizzasOrdered": [
+			"minorVersion": 1
+			"status": "success",
+			"pizzasOrdered": [
 			{
 				"name": "Pepperoni",
 				"price": 8,
