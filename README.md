@@ -67,7 +67,7 @@ template.json
 		"pizzas": [
 			"foreach", ".pizzasOrdered", "$pizza",{
 				"name": "$pizza.name",
-				"cost": '$pizza.price',
+				"cost": "$pizza.price",
 				"toppings": "$pizza.toppings[].name"
 			}
 		]
@@ -79,18 +79,18 @@ template.json
 result
 
 	{
-		apiVersion: [2, 10, 1],
-		success: true,
-		pizzas: [
+		"apiVersion": [2, 10, 1],
+		"success": true,
+		"pizzas": [
 			{
-				name: 'Pepperoni',
-				cost: 8,
-				toppings: ['pepperoni', 'cheese']
+				"name": "Pepperoni",
+				"cost": 8,
+				"toppings": ["pepperoni", "cheese"]
 			},
 			{
-				name: 'Cheese',
-				cost: 8,
-				toppings: ['cheese']
+				"name": "Cheese",
+				"cost": 8,
+				"toppings": ["cheese"]
 			}
 		]
 	}
