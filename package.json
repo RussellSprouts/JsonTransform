@@ -6,6 +6,10 @@
     "name": "Ryan.Russell",
     "email": "mail@ryanrussell.me"
   },
+  "repository" : {
+    "type": "git",
+    "url" : "http://github.com/RussellSprouts/JsonTransform.git"
+  },
   "main": "lib/JsonTransform",
   "engines": {
     "node": ">= 0.8.0"
