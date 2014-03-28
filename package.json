@@ -10,13 +10,13 @@
     "type": "git",
     "url" : "http://github.com/RussellSprouts/JsonTransform.git"
   },
-  "main": "lib/JsonTransform",
+  "main": "lib",
   "engines": {
     "node": ">= 0.8.0"
   },
   "keywords": [],
   "prefersGlobal":true,
   "bin": {
-    "jsontransform" : "lib/JsonTransform.js"
+    "jsontransform" : "bin/cli.js"
   }
 }
