@@ -18,8 +18,8 @@ data.json
 
 	{"key": "value", "arr": []}
 
-`jsontransform -f data.json -t "$.key"` => `"value"`  
-`jsontransform -f data.json -t "$.arr"` => `[]`
+`jstr -f data.json -t "$.key"` => `"value"`  
+`jstr -f data.json -t "$.arr"` => `[]`
 
 ---
 data.json
@@ -30,7 +30,7 @@ template.json
 	
 	{"newKey": "$.key"}
 
-`jsontransform -f data.json -tf template.json` => `{"newKey":"value"}`
+`jstr -f data.json -tf template.json` => `{"newKey":"value"}`
 
 ## Full Example
 
@@ -74,7 +74,7 @@ template.json
 
 	}
 
-`jsontransform -f data.json -tf template.json`
+`jstr -f data.json -tf template.json`
 
 result
 
