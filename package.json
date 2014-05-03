@@ -6,17 +6,20 @@
     "name": "Ryan.Russell",
     "email": "mail@ryanrussell.me"
   },
-  "repository" : {
+  "repository": {
     "type": "git",
-    "url" : "http://github.com/RussellSprouts/JsonTransform.git"
+    "url": "http://github.com/RussellSprouts/JsonTransform.git"
   },
   "main": "lib",
   "engines": {
     "node": ">= 0.8.0"
   },
   "keywords": [],
-  "prefersGlobal":true,
+  "prefersGlobal": true,
   "bin": {
-    "jsontransform" : "bin/cli.js"
+    "jstr": "bin/cli.js"
+  },
+  "dependencies": {
+    "commander": "~2.2.0"
   }
 }
